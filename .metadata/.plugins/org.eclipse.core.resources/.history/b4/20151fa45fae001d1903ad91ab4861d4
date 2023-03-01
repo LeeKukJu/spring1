@@ -1,0 +1,10 @@
+package kr.or.ddit.vo;
+
+public class NoticeVO {
+	private int noticeNo;
+	private String noticeTitile;
+	private String noticeContent;
+	private String noticeWriter;
+	private String noticeDate;
+	private String noticeHit;
+}

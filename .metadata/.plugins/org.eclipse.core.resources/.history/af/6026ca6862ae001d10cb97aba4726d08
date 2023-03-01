@@ -1,0 +1,26 @@
+package kr.or.ddit.notice.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import kr.or.ddit.vo.NoticeVO;
+import kr.or.ddit.vo.PaginationInfoVO;
+
+@Controller
+@RequestMapping("/notice")
+public class NoticeRetrieveContoroller {
+	
+	@RequestMapping(value = "/list.do")
+	public String noticeList(
+			@RequestParam(name="page", required = false, defaultValue = "1") int currentPage,
+			@RequestParam(required = false, defaultValue = "title") String searchType,
+			@RequestParam(required = false) String searchWord,
+			Model model
+			) {
+		PaginationInfoVO<NoticeVO> pagingVO = new PaginationInfoVO<NoticeVO>();
+		
+		return "notice/list";
+	}
+}

@@ -1,0 +1,9 @@
+package kr.or.ddit.main.service;
+
+import java.util.List;
+
+import kr.or.ddit.vo.BoardVO;
+
+public interface IMainService {
+	public List<BoardVO> selectBoardList();
+}

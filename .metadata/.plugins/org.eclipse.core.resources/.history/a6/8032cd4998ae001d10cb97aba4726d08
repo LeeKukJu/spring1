@@ -1,0 +1,10 @@
+package kr.or.ddit.free.service;
+
+import kr.or.ddit.vo.FreeVO;
+import kr.or.ddit.vo.PaginationInfoVO;
+
+public interface IFreeService {
+
+	int selectFreeCount(PaginationInfoVO<FreeVO> pagingVO);
+
+}

@@ -1,0 +1,32 @@
+package kr.or.ddit.vo;
+
+import java.util.List;
+
+/**
+ * <h4>페이지 VO</h4>
+ * @author ddit_lkj
+ * @param <T>
+ */
+public class PaginationInfoVO {
+	private int totalRecord;		// 총 게시글 수
+	private int totalPage;			// 총 페이지 수
+	private int currentPage;		// 현재 페이지
+	private int screenSize = 10;	// 페이지 당 게시글 수
+	private int blockSize = 5;		// 페이지 블록 수
+	private int startRow;			// 시작 row
+	private int endRow;				// 끝 row
+	private int startPage;
+	private int endPage;
+	private List<T> dateList;
+	private String searchType;
+	private String searchWord;
+	
+	public PaginationInfoVO() {}
+	
+	// PaginationInfoVO 객체를 만들 때, 한 페이지당 게시글 수와 페이지 블록 수를 원하는 값으로 초기화 할 수 있다.
+	public PaginationInfoVO(int screenSize, int blockSize) {
+		super();
+		this.screenSize = screenSize;
+		this.blockSize = blockSize;
+	}
+}

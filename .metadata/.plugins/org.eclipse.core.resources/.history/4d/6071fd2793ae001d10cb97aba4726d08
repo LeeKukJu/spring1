@@ -1,0 +1,7 @@
+package kr.or.ddit.vo;
+
+public class FreeVO {
+	private int freeNo;
+	private String freeWriter;
+	private String freeContent;
+}

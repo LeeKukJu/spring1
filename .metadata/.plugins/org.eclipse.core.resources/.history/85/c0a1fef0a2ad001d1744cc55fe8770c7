@@ -1,0 +1,9 @@
+package kr.or.ddit.board.dao;
+
+import java.util.List;
+
+import kr.or.ddit.vo.BoardVO;
+
+public interface IBoardDAO {
+	public List<BoardVO> selectBoardList();
+}

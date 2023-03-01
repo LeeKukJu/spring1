@@ -1,0 +1,19 @@
+package kr.or.ddit.main.service;
+
+import java.util.List;
+
+import javax.inject.Inject;
+
+import kr.or.ddit.vo.BoardVO;
+
+public class MainServiceImpl implements IMainService {
+	
+	@Inject
+	private ImainDAO mainDao;
+	
+	@Override
+	public List<BoardVO> selectBoardList() {
+		return null;
+	}
+
+}

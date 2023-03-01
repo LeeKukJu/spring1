@@ -1,0 +1,49 @@
+package kr.or.ddit.book.dao;
+
+import java.util.Map;
+
+import javax.inject.Inject;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+/*
+ * Repository 어노테이션은 데이터에 접근하는 클래스임을 명시합니다.
+ * 해당 어노테이션이 있는 클래스는 스프링이 데이터를 관리하는 클래스라고 인지하여 자바 빈(Java Bean)으로 등록해서 관리한다.
+ * 
+ * SqlSessionTemplate 객체를 멤버 변수로 선언하는 이유는 mapper xml을 실행시키기 위해서다.
+ * 해당 객체 위에 어노테이션 Inject 또는 어노테이션 Autowired를 붙여서 sqlSessionTemplate 객체를 사용할 수 있도록 한다.
+ * 이러한 형태를 '의존성 주입'이라고 한다.(필드 인젝션(Field Injection))
+ */
+@Repository
+public class BookDAOImpl {
+	// 데이터베이스와 통신을 담당하는 객체
+	// 클래스로 존재하거나 어딘가에 인스턴스로 존재해야한다.
+	@Inject
+	SqlSessionTemplate sqlSessionTemplate;
+	
+	public int insertBook(Map<String, Object> map) {
+		/*
+		 * useGeneratedKeys와 keyProperty설정에 따라서
+		 * 쿼리가 실행되고 나면 파라미터로 전달된 map객체에 book 테이블의 PK인 book_id항목이 생긴다.
+		 * 
+		 * 기존 map::::
+		 * {
+		 * 	"title" : "제목",
+		 * 	"category" : "카테고리입니다.",
+		 * 	"price" : "1000"
+		 * }
+		 * 
+		 * 쿼리 실행 후 map::::
+		 * {
+		 * 	"title" : "제목",
+		 * 	"category" : "카테고리입니다.",
+		 * 	"price" : "1000",
+		 * 	"book_id" : 1
+		 * }
+		 * sqlSessionTemplate.insert()의 반환값은 쿼리의 영향을 받은 행 수(row count)다
+		 * insert 쿼리의 경우 성공하면 1개의 행(row)이 생기므로 1을 리턴하고 실패하면 0을 리턴한다.
+		 */
+		return sqlSessionTemplate.insert("Book.insert", map);
+	}
+}

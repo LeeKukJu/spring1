@@ -1,0 +1,14 @@
+package kr.or.ddit.notice.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/notice")
+public class NoticeRetrieveContoroller {
+	
+	@RequestMapping(value = "/list.do")
+	public String noticeList() {
+		return "notice/list";
+	}
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Free">
+
+	<sql id="freeSearch">
+		<if test="searchType != null and searchType == 'title'">
+			and (freetitle like '%'||#{searchWord}||'%')
+		</if>
+		<if test="searchType != null and searchType == 'title'">
+			and (freewriter like '%'||#{searchWord}||'%')
+		</if>
+	</sql>
+	
+	<select id="selectFreeCount" parameterType="paginationInfoVO" resultType="int">
+		select count(freeno)
+		from notice
+		where 1=1
+		<include refid="freeSearch"/>
+	</select>
+	
+	<select id="selectFreeList" parameterType="paginationInfoVO" resultType="freeVO">
+	
+	</select>
+	
+	
+	
+	
+
+</mapper>

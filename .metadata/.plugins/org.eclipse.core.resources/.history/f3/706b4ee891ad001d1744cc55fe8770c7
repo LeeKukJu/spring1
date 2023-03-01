@@ -1,0 +1,20 @@
+package kr.or.ddit.board.service;
+
+import java.util.List;
+
+import javax.inject.Inject;
+
+import kr.or.ddit.vo.BoardVO;
+
+public class BoardServiceImpl implements IBoardService {
+	
+	@Inject
+	private IBoardDAO boardDao;
+	
+	@Override
+	public List<BoardVO> selectBoardList() {
+		
+		return null;
+	}
+
+}

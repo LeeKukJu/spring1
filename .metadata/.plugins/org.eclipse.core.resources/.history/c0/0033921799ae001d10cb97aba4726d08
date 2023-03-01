@@ -1,0 +1,22 @@
+package kr.or.ddit.free.dao;
+
+import java.util.List;
+
+import kr.or.ddit.vo.FreeVO;
+import kr.or.ddit.vo.PaginationInfoVO;
+
+public class FreeDAOImpl implements IFreeDAO{
+
+	@Override
+	public int selectFreeCount(PaginationInfoVO<FreeVO> pagingVO) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<FreeVO> selectFreeList(PaginationInfoVO<FreeVO> pagingVO) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

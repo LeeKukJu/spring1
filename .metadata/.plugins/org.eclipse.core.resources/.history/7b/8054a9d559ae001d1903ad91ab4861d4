@@ -1,0 +1,5 @@
+package kr.or.ddit.notice.web;
+
+public class NoticeRetrieveContoroller {
+
+}

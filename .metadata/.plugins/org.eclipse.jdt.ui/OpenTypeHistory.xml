@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=sampleSpringYse/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.book.service{IBookService.java[IBookService" modifiers="513" timestamp="1676438665734"/>
+<typeInfo handle="=FirstSpring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.board.service{IBoardService.java[IBoardService" modifiers="513" timestamp="1676534558791"/>
+<typeInfo handle="=FirstSpring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.board.dao{IBoardDAO.java[IBoardDAO" modifiers="513" timestamp="1676534597452"/>
+<typeInfo handle="=FirstSpring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.main.service{IMainService.java[IMainService" modifiers="513" timestamp="1676616043922"/>
+<typeInfo handle="=FirstSpring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.main.dao{IMainDAO.java[IMainDAO" modifiers="513" timestamp="1676616714600"/>
+<typeInfo handle="=FirstSpring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.notice.service{INoticeService.java[INoticeService" modifiers="513" timestamp="1676614910575"/>
+<typeInfo handle="=FirstSpring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.notice.dao{INoticeDAO.java[INoticeDAO" modifiers="513" timestamp="1676614970248"/>
+<typeInfo handle="=FirstSpring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.or.ddit.free.service{IFreeService.java[IFreeService" modifiers="513" timestamp="1676697877990"/>
+</typeInfoHistroy>

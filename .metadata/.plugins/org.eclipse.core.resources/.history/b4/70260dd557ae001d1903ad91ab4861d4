@@ -1,0 +1,15 @@
+package kr.or.ddit.main.service;
+
+import java.util.List;
+
+import kr.or.ddit.vo.BoardVO;
+
+public class MainServiceImpl implements IMainService {
+
+	@Override
+	public List<BoardVO> selectBoardList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,12 @@
+package kr.or.ddit.main.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import kr.or.ddit.vo.BoardVO;
+
+@Service
+public interface IMainService {
+	public List<BoardVO> selectBoardList();
+}

@@ -1,0 +1,16 @@
+package kr.or.ddit.board.dao;
+
+import java.util.List;
+
+import kr.or.ddit.vo.BoardVO;
+import kr.or.ddit.vo.PaginationInfoVO;
+
+public interface IBoardDAO {
+	public List<BoardVO> selectBoardList();
+
+	public int selecBoardCount(PaginationInfoVO<BoardVO> pagingVO);
+
+	public List<BoardVO> selectBoardList(PaginationInfoVO<BoardVO> pagingVO);
+
+	public BoardVO selectBoard(int bono);
+}

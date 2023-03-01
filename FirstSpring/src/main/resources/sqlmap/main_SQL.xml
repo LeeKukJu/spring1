@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Main">
+
+	<select id="selectBoardList" resultType="boardVO">
+		<![CDATA[
+		select
+			bono, botitle, bocontent, bowriter, bodate, bohit
+		from board
+		where rownum <= 5
+		order by bono desc
+		]]>
+	</select>
+	
+	<select id="selectNoticeList" resultType="noticeVO">
+		<![CDATA[
+		select
+			noticeno, noticetitle, noticecontent, noticewriter, noticedate, noticehit
+		from notice
+		where rownum <= 5
+		order by noticeno desc
+		]]>
+	</select>
+
+</mapper>

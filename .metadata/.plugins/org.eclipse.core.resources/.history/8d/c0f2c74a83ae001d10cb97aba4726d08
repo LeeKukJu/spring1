@@ -1,0 +1,16 @@
+package kr.or.ddit.notice.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/notice")
+public class NoticeModifyController {
+	
+	@RequestMapping(value = "/update.do", method = RequestMethod.GET)
+	public String noticeUpdateView(int noticeNo, Model model) {
+		return "notice/form";
+	}
+}

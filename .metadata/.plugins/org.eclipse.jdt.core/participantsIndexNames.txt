@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+D:\A_TeachingMaterial\08_Framework\02.SPRING1\workspace_spring1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1230312417.index
+\FirstSpring\src\main\java
+D:\A_TeachingMaterial\08_Framework\02.SPRING1\workspace_spring1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2129813828.index
+\sampleSpringYse\src\main\java
+D:\A_TeachingMaterial\08_Framework\02.SPRING1\workspace_spring1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4168430803.index
+\sampleSpringYse\src\main\java
+D:\A_TeachingMaterial\08_Framework\02.SPRING1\workspace_spring1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4195368254.index
+\FirstSpring\src\main\java
+D:\A_TeachingMaterial\08_Framework\02.SPRING1\workspace_spring1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3113109471.index
+\FirstSpring\src\main\java
+D:\A_TeachingMaterial\08_Framework\02.SPRING1\workspace_spring1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3681619462.index
+\FirstSpring\src\main\java

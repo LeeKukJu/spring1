@@ -1,0 +1,43 @@
+package kr.or.ddit.board.web;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import kr.or.ddit.vo.BoardVO;
+
+@Controller
+@RequestMapping("/board")
+public class BoardInsertController {
+	
+	@RequestMapping(value = "/form.do", method = RequestMethod.GET)
+	public String boardForm() {
+		return "board/form";
+	}
+	
+	@RequestMapping(value = "/insert.do", method = RequestMethod.POST)
+	public String boardInsert(BoardVO boardVO, Model model) {
+		String goPage = "";
+		Map<String, String> errors = new HashMap<String, String>();
+		if(StringUtils.isBlank(boardVO.getBoTitle())) {
+			errors.put("boTitle", "제목을 입력해주세요.");
+		}
+		if(StringUtils.isBlank(boardVO.getBoContent())) {
+			errors.put("boContent", "내용을 입력해주세요.");
+		}
+		
+		if(errors.size() > 0) {   	// 에러가 있음
+			model.addAttribute("errors", errors);
+			model.addAttribute("board", boardVO);
+			goPage = "board/form";
+		}else {						// 에러가 없이 정상적인 데이터가 넘어옴
+			boardVO.setBoWriter("a001");
+			ServiceResult result = boardService.insertBoard(boardVO);  // ServiceResult : 성공여부 문자열로 받기위해
+		}
+	}
+}

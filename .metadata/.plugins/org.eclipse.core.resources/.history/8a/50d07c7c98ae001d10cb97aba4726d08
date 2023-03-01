@@ -1,0 +1,20 @@
+package kr.or.ddit.free.service;
+
+import java.util.List;
+
+import kr.or.ddit.vo.FreeVO;
+import kr.or.ddit.vo.PaginationInfoVO;
+
+public class FreeServiceImpl implements IFreeService {
+
+	@Override
+	public int selectFreeCount(PaginationInfoVO<FreeVO> pagingVO) {
+		return 0;
+	}
+
+	@Override
+	public List<FreeVO> selecFreeList(PaginationInfoVO<FreeVO> pagingVO) {
+		return null;
+	}
+
+}
